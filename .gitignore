@@ -1,7 +1,7 @@
-     node_modules/
-     .idea/
-     target/
-     Trycloud-Project.iml
+     /node_modules/
+     /.idea/
+     /target/
+     /Trycloud-Project.iml
 
       # Compiled source #
       ###################
@@ -24,3 +24,5 @@
     *.rar
     *.tar
     *.zip
+
+
