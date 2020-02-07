@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-07T11:46:43.319Z",
+        "line": 4,
+        "name": "Login happy path",
+        "description": "",
+        "id": "login-function;login-happy-path",
+        "after": [
+          {
+            "result": {
+              "duration": 756724000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10452620000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should navigate the website",
+            "match": {
+              "location": "LoginStepDefs.user_should_navigate_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5122083300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User use the valid credentials",
+            "match": {
+              "location": "LoginStepDefs.user_use_the_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154875600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should see the following tittle\"Files - Trycloud\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Files - Trycloud\"",
+                  "offset": 36
+                }
+              ],
+              "location": "LoginStepDefs.user_should_see_the_following_tittle(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Login function",
+    "description": "",
+    "id": "login-function",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
