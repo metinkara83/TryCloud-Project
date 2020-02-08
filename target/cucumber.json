@@ -3,15 +3,59 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-02-07T11:46:43.319Z",
-        "line": 4,
-        "name": "Login happy path",
+        "line": 3,
+        "name": "user login the webpage",
         "description": "",
-        "id": "login-function;login-happy-path",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2954997500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should navigate the website",
+            "match": {
+              "location": "LoginStepDefs.user_should_navigate_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5227558600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User use the valid credentials",
+            "match": {
+              "location": "LoginStepDefs.user_use_the_valid_credentials()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-08T00:31:28.482Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7048439300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.start()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Adding event to the calendar",
+        "description": "",
+        "id": "calender-page;adding-event-to-the-calendar",
         "after": [
           {
             "result": {
-              "duration": 756724000,
+              "duration": 722093600,
               "status": "passed"
             },
             "match": {
@@ -24,43 +68,55 @@
         "steps": [
           {
             "result": {
-              "duration": 10452620000,
+              "duration": 2855087500,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User should navigate the website",
+            "line": 9,
+            "name": "User should navigate to \"Calender\"page",
             "match": {
-              "location": "LoginStepDefs.user_should_navigate_the_website()"
+              "arguments": [
+                {
+                  "val": "\"Calender\"",
+                  "offset": 24
+                }
+              ],
+              "location": "CalendarStepDefs.user_should_navigate_to_page(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5122083300,
+              "duration": 180181500,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User use the valid credentials",
+            "line": 10,
+            "name": "User wants to create an event presses newCalender Button",
             "match": {
-              "location": "LoginStepDefs.user_use_the_valid_credentials()"
+              "location": "CalendarStepDefs.user_wants_to_create_an_event_presses_newCalender_Button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 154875600,
+              "duration": 181619600,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User should see the following tittle\"Files - Trycloud\"",
+            "line": 11,
+            "name": "User gives name for the event and submits",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Files - Trycloud\"",
-                  "offset": 36
-                }
-              ],
-              "location": "LoginStepDefs.user_should_see_the_following_tittle(String)"
+              "location": "CalendarStepDefs.user_gives_name_for_the_event_and_submits()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3266116400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "new event appears on the page",
+            "match": {
+              "location": "CalendarStepDefs.new_event_appears_on_the_page()"
             },
             "keyword": "Then "
           }
@@ -72,11 +128,11 @@
         ]
       }
     ],
-    "name": "Login function",
+    "name": "Calender Page",
     "description": "",
-    "id": "login-function",
+    "id": "calender-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/Calendar.feature",
     "tags": []
   }
 ]

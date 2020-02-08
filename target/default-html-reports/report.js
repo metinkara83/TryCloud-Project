@@ -1,18 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Calendar.feature");
 formatter.feature({
-  "name": "Login function",
+  "name": "Calender Page",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Login happy path",
+formatter.background({
+  "name": "user login the webpage",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User should navigate the website",
@@ -34,12 +32,52 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Adding event to the calendar",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
 formatter.step({
-  "name": "User should see the following tittle\"Files - Trycloud\"",
+  "name": "User should navigate to \"Calender\"page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CalendarStepDefs.user_should_navigate_to_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User wants to create an event presses newCalender Button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CalendarStepDefs.user_wants_to_create_an_event_presses_newCalender_Button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User gives name for the event and submits",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefs.user_should_see_the_following_tittle(String)"
+  "location": "CalendarStepDefs.user_gives_name_for_the_event_and_submits()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "new event appears on the page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CalendarStepDefs.new_event_appears_on_the_page()"
 });
 formatter.result({
   "status": "passed"
