@@ -11,23 +11,20 @@ import org.junit.Assert;
 public class LoginStepDefs {
     @Given("User should navigate the website")
     public void user_should_navigate_the_website() {
-    Driver.get().get(ConfigurationReader.get("url"));
-
+        Driver.get().get(ConfigurationReader.get("url"));
     }
 
     @When("User use the valid credentials")
     public void user_use_the_valid_credentials() {
-        System.out.println("true = " + true);
         String username=ConfigurationReader.get("username");
         String password=ConfigurationReader.get("password");
         new LoginPage().login(username,password);
     }
 
-    @Then("User should see the following tittle{string}")
-    public void user_should_see_the_following_tittle(String expectedTitle) {
-
+    @Then("User should see the following title {string}")
+    public void user_should_see_the_following_title(String expectedTitle) {
         String actualTitle=Driver.get().getTitle();
-        Assert.assertEquals(expectedTitle,actualTitle  );
+        Assert.assertEquals(expectedTitle,actualTitle);
     }
 
 }

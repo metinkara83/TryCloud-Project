@@ -3,15 +3,59 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-02-07T11:46:43.319Z",
-        "line": 4,
-        "name": "Login happy path",
+        "line": 2,
+        "name": "Login page",
         "description": "",
-        "id": "login-function;login-happy-path",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5769408651,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User should navigate the website",
+            "match": {
+              "location": "LoginStepDefs.user_should_navigate_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11543929894,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User use the valid credentials",
+            "match": {
+              "location": "LoginStepDefs.user_use_the_valid_credentials()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-10T11:48:57.735Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3494902747,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.connection()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "connection to Talk page",
+        "description": "",
+        "id": "talk-page-connection;connection-to-talk-page",
         "after": [
           {
             "result": {
-              "duration": 756724000,
+              "duration": 691817772,
               "status": "passed"
             },
             "match": {
@@ -24,43 +68,25 @@
         "steps": [
           {
             "result": {
-              "duration": 10452620000,
+              "duration": 8928703685,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User should navigate the website",
+            "line": 8,
+            "name": "user connect to talk page",
             "match": {
-              "location": "LoginStepDefs.user_should_navigate_the_website()"
+              "location": "TalkPageStepDefs.user_connect_to_talk_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 5122083300,
+              "duration": 331578712,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User use the valid credentials",
+            "line": 9,
+            "name": "verify that Join a conversation or start a new one message shows",
             "match": {
-              "location": "LoginStepDefs.user_use_the_valid_credentials()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 154875600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User should see the following tittle\"Files - Trycloud\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Files - Trycloud\"",
-                  "offset": 36
-                }
-              ],
-              "location": "LoginStepDefs.user_should_see_the_following_tittle(String)"
+              "location": "TalkPageStepDefs.verify_that_Join_a_conversation_or_start_a_new_one_message_shows()"
             },
             "keyword": "Then "
           }
@@ -72,11 +98,11 @@
         ]
       }
     ],
-    "name": "Login function",
+    "name": "Talk Page Connection",
     "description": "",
-    "id": "login-function",
+    "id": "talk-page-connection",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/talkPage.feature",
     "tags": []
   }
 ]
