@@ -1,13 +1,18 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/talkPage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/files.feature");
 formatter.feature({
-  "name": "Talk Page Connection",
+  "name": "Users should be add new file",
   "description": "",
   "keyword": "Feature"
 });
-formatter.background({
-  "name": "Login page",
+formatter.scenario({
+  "name": "Login as a user and add new file",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@cagri"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
@@ -24,7 +29,7 @@ formatter.result({
 });
 formatter.step({
   "name": "User use the valid credentials",
-  "keyword": "Then "
+  "keyword": "When "
 });
 formatter.match({
   "location": "LoginStepDefs.user_use_the_valid_credentials()"
@@ -32,32 +37,12 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "connection to Talk page",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
 formatter.step({
-  "name": "user connect to talk page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TalkPageStepDefs.user_connect_to_talk_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify that Join a conversation or start a new one message shows",
+  "name": "the user add new files",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "TalkPageStepDefs.verify_that_Join_a_conversation_or_start_a_new_one_message_shows()"
+  "location": "FilesStepDef.the_user_add_new_files()"
 });
 formatter.result({
   "status": "passed"
