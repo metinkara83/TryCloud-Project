@@ -17,6 +17,10 @@ public class Hooks {
         Driver.get().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
+    public void connection(){
+        System.out.println("Connected to Database");
+        Driver.get().manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+    }
     @After //from Cucumber Library
     public void tearDown(Scenario scenario){
         if(scenario.isFailed()){
