@@ -1,6 +1,6 @@
 Feature: Login function
 
-#  @wip
+  @wip
   Scenario: Login happy path
   Given User should navigate the website
   When User use the valid credentials
