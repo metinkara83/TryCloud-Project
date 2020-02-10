@@ -17,8 +17,6 @@ public class FilesPage {
     @FindBy(xpath = "//*[@id='app-content-files']/div/div[2]/a")
     public WebElement add;
 
-
-
     @FindBy(id ="view29-input-folder")
     public WebElement fileName;
 
@@ -26,14 +24,14 @@ public class FilesPage {
     public WebElement submit;
     public void plus(String file){
         add.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
         List<WebElement> list= Driver.get().findElements(By.xpath("//div[contains(@class,'newFileMenu ')]/ul//li//a"));
         list.get(0).click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
         fileName.sendKeys(file);
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
         submit.click();
-        BrowserUtils.waitFor(2);
+        BrowserUtils.waitFor(3);
     }
 
 
