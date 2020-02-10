@@ -3,44 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "line": 2,
-        "name": "Login page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5769408651,
-              "status": "passed"
-            },
-            "line": 3,
-            "name": "User should navigate the website",
-            "match": {
-              "location": "LoginStepDefs.user_should_navigate_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11543929894,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User use the valid credentials",
-            "match": {
-              "location": "LoginStepDefs.user_use_the_valid_credentials()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-02-10T11:48:57.735Z",
+        "start_timestamp": "2020-02-10T19:17:59.225Z",
         "before": [
           {
             "result": {
-              "duration": 3494902747,
+              "duration": 4352082800,
               "status": "passed"
             },
             "match": {
@@ -48,14 +15,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "connection to Talk page",
+        "line": 3,
+        "name": "Login as a user and add new file",
         "description": "",
-        "id": "talk-page-connection;connection-to-talk-page",
+        "id": "users-should-be-add-new-file;login-as-a-user-and-add-new-file",
         "after": [
           {
             "result": {
-              "duration": 691817772,
+              "duration": 956169371,
               "status": "passed"
             },
             "match": {
@@ -68,41 +35,53 @@
         "steps": [
           {
             "result": {
-              "duration": 8928703685,
+              "duration": 3838045077,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user connect to talk page",
+            "line": 4,
+            "name": "User should navigate the website",
             "match": {
-              "location": "TalkPageStepDefs.user_connect_to_talk_page()"
+              "location": "LoginStepDefs.user_should_navigate_the_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 331578712,
+              "duration": 6427532414,
               "status": "passed"
             },
-            "line": 9,
-            "name": "verify that Join a conversation or start a new one message shows",
+            "line": 5,
+            "name": "User use the valid credentials",
             "match": {
-              "location": "TalkPageStepDefs.verify_that_Join_a_conversation_or_start_a_new_one_message_shows()"
+              "location": "LoginStepDefs.user_use_the_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10337863752,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user add new files",
+            "match": {
+              "location": "FilesStepDef.the_user_add_new_files()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@cagri"
           }
         ]
       }
     ],
-    "name": "Talk Page Connection",
+    "name": "Users should be add new file",
     "description": "",
-    "id": "talk-page-connection",
+    "id": "users-should-be-add-new-file",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/talkPage.feature",
+    "uri": "file:src/test/resources/features/files.feature",
     "tags": []
   }
 ]
