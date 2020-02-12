@@ -54,4 +54,16 @@ public class CalendarStepDefs {
         Assert.assertEquals(actualName,expectedName);
     }
 
+
+    @Then("Day, week, month, will be visible")
+    public void day_week_month_will_be_visible() {
+
+        CalendarPage calendarPage=new CalendarPage();
+        BrowserUtils.waitFor(3);
+        Assert.assertTrue(calendarPage.monthIcon.isDisplayed());
+        Assert.assertTrue(calendarPage.dayIcon.isDisplayed());
+        Assert.assertTrue(calendarPage.weekIcon.isDisplayed());
+
+    }
+
 }

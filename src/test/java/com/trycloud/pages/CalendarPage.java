@@ -23,4 +23,14 @@ public class CalendarPage {
 
     @FindBy(xpath = "(//a[@class='action permanent ng-binding'])[3]")
     public WebElement Event;
+
+    @FindBy(css = "button.button.last.ng-pristine")
+    public WebElement monthIcon;
+
+    @FindBy(css = "button.button.middle.ng-pristine")
+    public WebElement weekIcon;
+
+    @FindBy(css = "button.button.first.ng-pristine")
+    public WebElement dayIcon;
+
 }
