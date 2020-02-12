@@ -1,3 +1,4 @@
+@smoke
 Feature: Users should be add new file
   @cagri
   Scenario: Login as a user and add new file

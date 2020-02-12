@@ -1,5 +1,6 @@
 package com.trycloud.runners;
 
+import com.trycloud.pages.CalendarPage;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -12,7 +13,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/",
         glue="com/trycloud/step_definitions/",
         dryRun = false,
-        tags="@cagri"
+        tags="@calendar"
 )
 public class CukesRunner {
 }
+
