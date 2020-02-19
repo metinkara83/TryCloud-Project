@@ -14,6 +14,7 @@ public class Hooks {
 
     @Before
     public void start(){
+        System.out.println("Connected to Database");
         Driver.get().manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 

@@ -21,12 +21,14 @@ public class CalendarStepDefs {
     @Given("User should navigate to {string}page")
     public void user_should_navigate_to_page(String string) {
        new BasePage().calendar.click();
+
     }
 
 
     @When("User wants to create an event presses newCalender Button")
     public void user_wants_to_create_an_event_presses_newCalender_Button() {
         new CalendarPage().newCalenderButton.click();
+
     }
 
     @Then("User gives name for the event and submits")
