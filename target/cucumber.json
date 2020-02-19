@@ -3,18 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "user login the webpage",
+        "line": 3,
+        "name": "Login page",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 5899300101,
+              "duration": 3032448084,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "User should navigate the website",
             "match": {
               "location": "LoginStepDefs.user_should_navigate_the_website()"
@@ -23,24 +23,24 @@
           },
           {
             "result": {
-              "duration": 6508425999,
+              "duration": 4839735790,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "User use the valid credentials",
             "match": {
               "location": "LoginStepDefs.user_use_the_valid_credentials()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-02-12T14:20:22.854Z",
+        "start_timestamp": "2020-02-19T16:17:43.864Z",
         "before": [
           {
             "result": {
-              "duration": 6787829400,
+              "duration": 4900016811,
               "status": "passed"
             },
             "match": {
@@ -48,14 +48,14 @@
             }
           }
         ],
-        "line": 9,
-        "name": "Adding event to the calendar",
+        "line": 8,
+        "name": "Creating new board",
         "description": "",
-        "id": "calender-page;adding-event-to-the-calendar",
+        "id": "deck-page;creating-new-board",
         "after": [
           {
             "result": {
-              "duration": 717889900,
+              "duration": 188650969,
               "status": "passed"
             },
             "match": {
@@ -68,187 +68,71 @@
         "steps": [
           {
             "result": {
-              "duration": 3213292501,
+              "duration": 2591531844,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should navigate to \"Deck\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Deck\"",
+                  "offset": 24
+                }
+              ],
+              "location": "DeckStepDefs.user_should_navigate_to_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1061695334,
               "status": "passed"
             },
             "line": 10,
-            "name": "User should navigate to \"Calender\"page",
+            "name": "User clicks the create new board text",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Calender\"",
-                  "offset": 24
-                }
-              ],
-              "location": "CalendarStepDefs.user_should_navigate_to_page(String)"
+              "location": "DeckStepDefs.user_clicks_the_create_new_board_text()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 204206500,
+              "duration": 317364814,
               "status": "passed"
             },
             "line": 11,
-            "name": "User wants to create an event presses newCalender Button",
+            "name": "User enters a title in the box",
             "match": {
-              "location": "CalendarStepDefs.user_wants_to_create_an_event_presses_newCalender_Button()"
+              "location": "DeckStepDefs.user_enters_a_title_in_the_box()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 164358400,
+              "duration": 294683315,
               "status": "passed"
             },
             "line": 12,
-            "name": "User gives name for the event and submits",
+            "name": "User selects green color and click the ok sign",
             "match": {
-              "location": "CalendarStepDefs.user_gives_name_for_the_event_and_submits()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3376704500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "new event appears on the page",
-            "match": {
-              "location": "CalendarStepDefs.new_event_appears_on_the_page()"
+              "location": "DeckStepDefs.user_selects_green_color_and_click_the_ok_sign()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@calendar"
-          },
-          {
-            "name": "@one"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "user login the webpage",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3933228800,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User should navigate the website",
-            "match": {
-              "location": "LoginStepDefs.user_should_navigate_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5811289000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User use the valid credentials",
-            "match": {
-              "location": "LoginStepDefs.user_use_the_valid_credentials()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-02-12T14:20:49.800Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5127787701,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.start()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "day/week/month visible",
-        "description": "",
-        "id": "calender-page;day/week/month-visible",
-        "after": [
-          {
-            "result": {
-              "duration": 738267700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2924670300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User should navigate to \"Calender\"page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Calender\"",
-                  "offset": 24
-                }
-              ],
-              "location": "CalendarStepDefs.user_should_navigate_to_page(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3138751800,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "Day, week, month, will be visible",
-            "match": {
-              "location": "CalendarStepDefs.day_week_month_will_be_visible()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@calendar"
-          },
-          {
-            "name": "@two"
+            "name": "@wipDeck"
           }
         ]
       }
     ],
-    "name": "Calender Page",
+    "name": "Deck Page",
     "description": "",
-    "id": "calender-page",
+    "id": "deck-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Calendar.feature",
-    "tags": [
-      {
-        "name": "@calendar",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/deck.feature",
+    "tags": []
   }
 ]

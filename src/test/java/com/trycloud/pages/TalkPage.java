@@ -13,6 +13,6 @@ public class TalkPage extends BasePage {
     @FindBy(xpath = "//h2")
     public WebElement joinConversation;
 
-// 2. msg
+
 
 }
